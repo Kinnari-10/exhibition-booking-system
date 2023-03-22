@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+*{
+ margin:0;
+ padding: 0;
+ outline: 0;
+}
+.filter{
+ position: fixed;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ z-index: 1;
+ background: rgb(122, 135, 250);
+background: -moz-linear-gradient(180deg, rgb(74, 110, 243) 0%, rgb(57, 79, 243) 100%);
+background: -webkit-linear-gradient(180deg, rgb(47, 63, 235) 0%, rgb(58, 91, 237) 100%);
+background: linear-gradient(180deg, rgb(23, 26, 106) 0%, rgb(239, 56, 93) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e94ca1",endColorstr="#c74ae9",GradientType=1);
+opacity: .7;
+}
+table{
+ position: absolute;
+ z-index: 2;
+ left:50%;
+ top: 40%;
+ transform: translate(-60%,-40%);
+ width: 10%; 
+ border-collapse: collapse;
+ border-spacing: 1;
+ box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ border-radius: 12px 12px 0 0;
+ overflow: hidden;
+
+}
+td , th{
+ padding: 10px 10px;
+ text-align: center;
+ 
+
+}
+th{
+ background-color: #14ba49;
+ color: #fafafa;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 100;
+ text-transform: uppercase;
+
+}
+tr{
+ width: 30%;
+ background-color: #fafafa;
+ font-family: 'Montserrat', sans-serif;
+}
+tr:nth-child(even){
+ background-color: #eeeeee;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4rem 0.4rem;
+    border: #eeeeee;
+    font-size: 0.6rem;
+    color: #d32626;
+    text-transform: capitalize;
+    transition: .2s linear;
+    margin-top: 1rem;
+    background-color:#81cd99;
+ }
+ 
+ .btn:hover{
+    border-radius: 5rem;
+    background-color: #9ad4ac;
+    color: #170969;
+ }
